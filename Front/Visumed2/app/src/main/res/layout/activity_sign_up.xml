@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.SignUpActivity"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:layout_marginBottom="36dp"
+        android:autofillHints="true"/>
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/edit_password"
+    android:hint="@string/senha"
+    android:inputType="textPassword"
+    android:layout_marginBottom="36dp"
+    android:autofillHints="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_name"
+        android:layout_marginBottom="36dp"
+        android:hint="@string/nome"
+        android:autofillHints="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_Cpf"
+        android:hint="@string/cpf"
+        android:autofillHints="true"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:id="@+id/btn_cadastro"
+            android:onClick="buttonSignUpClick"
+            android:background="#2B699A"
+            android:text="@string/btn_cadastro"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="67dp"
+            android:textSize="17sp"
+            android:textFontWeight="500"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:id="@+id/btn_redirect_login"
+            android:onClick="redirect_login"
+            android:layout_marginTop="12dp"
+            android:textColor="#2B699A"
+            android:background="@android:color/transparent"
+            android:text="@string/realizar_login"
+            android:textSize="17sp"
+            android:textFontWeight="500"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.SignInActivity"
+    android:layout_gravity="center"
+    android:fontFamily="Roboto"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:inputType="textEmailAddress"
+            android:layout_height="wrap_content"
+            android:autofillHints="true"
+            android:hint="@string/email" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:autofillHints="true"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginTop="48dp"
+            android:hint="@string/senha"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:id="@+id/btn_login"
+            android:onClick="buttonSignInClick"
+            android:background="#2B699A"
+            android:text="@string/entrar"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="67dp"
+            android:textSize="17sp"
+            android:textFontWeight="500"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:id="@+id/btn_cadastro"
+            android:onClick="redirect_cadastrar"
+            android:layout_marginTop="12dp"
+            android:textColor="#2B699A"
+            android:background="@android:color/transparent"
+            android:text="@string/cadastrar_se"
+            android:textSize="17sp"
+            android:textFontWeight="500"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

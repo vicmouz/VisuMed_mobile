@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "679505566273",
+    "firebase_url": "https://visumed-f04d6.firebaseio.com",
+    "project_id": "visumed-f04d6",
+    "storage_bucket": "visumed-f04d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679505566273:android:733468400bad53253284c0",
+        "android_client_info": {
+          "package_name": "com.example.visumed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "679505566273-tpjcus22mioaau6t1p2gld3kvval8b5r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.visumed",
+            "certificate_hash": "c38f0330ae0b7fcf1e221a07c64c56ff528dfc13"
+          }
+        },
+        {
+          "client_id": "679505566273-1evm24ula5ti5cg3k7dj6jfc6urn07in.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYMyp2YUAXrRZHEQatSNnVHhAm-tys2Ow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "679505566273-1evm24ula5ti5cg3k7dj6jfc6urn07in.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

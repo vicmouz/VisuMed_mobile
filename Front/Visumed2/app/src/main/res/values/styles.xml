@@ -10,7 +10,7 @@
 
     <style name="SplashScreenTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowFullscreen">true</item>
-        <item name=""
+        <item name="android:windowDisablePreview">true</item>
     </style>
 
 </resources>

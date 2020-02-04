@@ -9,16 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ScannerActivity"></activity>
-        <activity
-            android:name=".SplashScreenActivity"
-            android:theme="@style/SplashScreenTheme">
+        <activity android:name=".DrugDetailsActivity"></activity>
+        <activity android:name=".auth.SignUpActivity" />
+        <activity android:name=".auth.SignInActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".ScannerActivity" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/SplashScreenTheme"></activity>
     </application>
 
 </manifest>
