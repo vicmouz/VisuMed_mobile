@@ -16,19 +16,14 @@ import android.widget.Toast;
 
 import com.example.visumed.DrugstoreList;
 import com.example.visumed.R;
+import com.example.visumed.ScannerActivity;
 import com.example.visumed.auth.SignInActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link PerfilFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link PerfilFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class PerfilFragment extends Fragment {
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -56,6 +51,11 @@ public class PerfilFragment extends Fragment {
 
     public void verFarmacias(View view){
         Intent intent = new Intent(getActivity(), DrugstoreList.class);
+        startActivity(intent);
+    }
+
+    public void escanearMedicamento(View view) {
+        Intent intent = new Intent(getActivity(), ScannerActivity.class);
         startActivity(intent);
     }
 }

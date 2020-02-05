@@ -81,4 +81,14 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
         Intent intent = new Intent(this, DrugDetailsActivity.class);
         startActivity(intent);
     }
+
+    public void verFarmacias(View view){
+        Intent intent = new Intent(this, DrugstoreList.class);
+        startActivity(intent);
+    }
+
+    public void escanearMedicamento(View view) {
+        Intent intent = new Intent(this, ScannerActivity.class);
+        startActivity(intent);
+    }
 }
