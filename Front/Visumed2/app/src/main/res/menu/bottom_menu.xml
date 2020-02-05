@@ -2,7 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/menu_home"
-        android:title="Home" />
+        android:icon="@drawable/baseline_home_black_18dp"
+        android:title="Página inicial" />
 
     <!--item
         android:id="@+id/menu_mapa"
@@ -10,6 +11,7 @@
 
     <item
         android:id="@+id/menu_perfil"
+        android:icon="@drawable/baseline_more_horiz_black_18dp"
         android:title="Ver mais"/>
 
 </menu>

@@ -25,38 +25,41 @@
         android:layout_marginBottom="36dp"
         android:autofillHints="true"/>
 
-<EditText
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/edit_password"
-    android:hint="@string/senha"
-    android:inputType="textPassword"
-    android:layout_marginBottom="36dp"
-    android:autofillHints="true"/>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/edit_name"
-        android:layout_marginBottom="36dp"
-        android:hint="@string/nome"
-        android:autofillHints="true"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_password"
+            android:hint="@string/senha"
+            android:inputType="textPassword"
+            android:layout_marginBottom="36dp"
+            android:autofillHints="true"/>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/edit_Cpf"
-        android:hint="@string/cpf"
-        android:autofillHints="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_name"
+            android:layout_marginBottom="36dp"
+            android:hint="@string/nome"
+            android:autofillHints="true"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_Cpf"
+            android:hint="@string/cpf"
+            android:autofillHints="true"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="52dp"
             android:id="@+id/btn_cadastro"
             android:onClick="buttonSignUpClick"
-            android:background="#2B699A"
+            android:background="@color/colorBtnBlue"
             android:text="@string/btn_cadastro"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
             android:layout_marginTop="67dp"
             android:textSize="17sp"
             android:textFontWeight="500"
@@ -68,7 +71,7 @@
             android:id="@+id/btn_redirect_login"
             android:onClick="redirect_login"
             android:layout_marginTop="12dp"
-            android:textColor="#2B699A"
+            android:textColor="@color/colorBtnBlue"
             android:background="@android:color/transparent"
             android:text="@string/realizar_login"
             android:textSize="17sp"

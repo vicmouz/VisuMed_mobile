@@ -3,37 +3,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragmentos.PerfilFragment">
+    tools:context=".fragmentos.PerfilFragment"
+    android:layout_marginLeft="45dp"
+    android:layout_marginRight="45dp"
+    android:orientation="horizontal">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_gravity="center">
 
         <Button
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="52dp"
+            android:background="@color/colorBtnBlue"
             android:id="@+id/btn_drugstores"
             android:text="@string/farmacias_parceiras"
             android:layout_below="@id/btn_sair"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_marginBottom="10dp"
             android:onClick="verFarmacias"/>
 
         <Button
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:background="@color/colorBtnBlue"
+            android:layout_height="52dp"
             android:id="@+id/btn_consultDrug"
             android:text="Consultar remédios"
             android:layout_below="@id/btn_sair"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_marginBottom="10dp"
             android:onClick="verFarmacias"/>
 
         <Button
             android:id="@+id/btn_sair"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="52dp"
+            android:background="@color/colorBtnBlue"
+            android:textColor="@color/white"
+            android:textSize="17sp"
             android:onClick="buttonSignOutClick"
             android:text="@string/deslogar" />
 

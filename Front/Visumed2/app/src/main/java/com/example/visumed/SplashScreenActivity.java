@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.example.visumed.auth.SignInActivity;
+
 public class SplashScreenActivity extends AppCompatActivity {
 
     @Override
@@ -23,7 +25,7 @@ public class SplashScreenActivity extends AppCompatActivity {
     }
 
     private void MostrarLogin() {
-        Intent intent = new Intent(this, ScannerActivity.class);
+        Intent intent = new Intent(this, SignInActivity.class);
         startActivity(intent);
         finish();
     }

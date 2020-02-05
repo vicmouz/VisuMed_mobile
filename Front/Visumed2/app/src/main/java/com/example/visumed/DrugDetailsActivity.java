@@ -1,6 +1,7 @@
 package com.example.visumed;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -35,6 +36,11 @@ public class DrugDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drug_details);
 
+        this.getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_TITLE);
+        getSupportActionBar().setDisplayShowCustomEnabled(true);
+        getSupportActionBar().setTitle("Detalhes de medicamento");
+
+        getSupportActionBar().setElevation(0);
         final FirebaseAuth auth = FirebaseAuth.getInstance();
         final FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
         FirebaseUser firebaseUser = auth.getCurrentUser();
@@ -66,7 +72,7 @@ public class DrugDetailsActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for(DataSnapshot postSnapshot: dataSnapshot.getChildren()){
                     Drug drug = postSnapshot.getValue(Drug.class);
-
+                    System.out.println(drug);
                     if(drug.getName().equals(name)){
                         name.setText(drug.getName());
                         indications.setText(drug.getIndications());

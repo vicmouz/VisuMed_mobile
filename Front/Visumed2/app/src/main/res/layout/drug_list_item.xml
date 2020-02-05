@@ -9,8 +9,11 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:minHeight="100dp">
+        android:layout_height="wrap_content"
+        android:layout_marginRight="52dp"
+        android:layout_marginLeft="52dp"
+
+        android:background="@color/white">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -19,7 +22,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/drug_name"/>
+                android:id="@+id/drug_name"
+                android:textSize="25sp"
+                android:gravity="center" />
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
