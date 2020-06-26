@@ -4,7 +4,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 
 import createObjectNavOptionTabDefault from './createObjectNavOptionTabDefault';
 
-import SingIn from '~/pages/SingIn';
+import Login from '~/pages/Login';
 import Home from '~/pages/Home';
 
 import { colors } from '~/styles/themes';
@@ -14,7 +14,7 @@ export default (isSigned = false) =>
     createSwitchNavigator(
       {
         Sign: createSwitchNavigator({
-          SingIn,
+          Login,
         }),
         App: createBottomTabNavigator(
           {

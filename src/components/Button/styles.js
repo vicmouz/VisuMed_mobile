@@ -1,6 +1,7 @@
 import styled from 'styled-components/native';
 
 import { colors } from '~/styles/themes';
+import { responsiveSize } from '~/styles/themes/responsive';
 
 export const Container = styled.TouchableOpacity`
   height: 46px;
@@ -13,5 +14,5 @@ export const Container = styled.TouchableOpacity`
 
 export const Text = styled.Text`
   color: ${colors.light};
-  font-size: 18px;
+  font-size: ${responsiveSize(18)}px;
 `;
